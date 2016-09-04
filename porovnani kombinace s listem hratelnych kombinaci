@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            Parser parser = new Parser();
+
+            string keyWord = "AA"; /* tady bude misto //string keyWord = "AA";//    //string keyWord = (var nejake jmeno)// 
+            * ten var potrebuju vytahnout z hlavniho scriptu. Tam pisu ze jeste nevim jak ten vystup z console.WriteLine (s)/(o) dostat
+            * do var, nebo do stringu.  
+            */
+
+            const string GameActionPreFlop = "Akce s kartamy";
+
+            // Ctenni souboru line by line
+            try
+            {
+                string[] lines = System.IO.File.ReadAllLines(@"C:\shk.txt");
+                foreach (string line in lines)
+                {
+                    if (line.Contains(keyWord)) // Jmeno stolu
+                    {
+
+                        var LineOfList = Parser.getNameOfHand(line, keyWord);
+                        
+                        Console.WriteLine(GameActionPreFlop + "-" + LineOfList);
+
+                    }                    
+                }
+            }
+            catch (Exception e)
+            {
+                // Co budes delat, kdyz ten soubor neexistuje?   
+                Console.WriteLine(e.Message);
+            }
+
+            Console.WriteLine("Press ENTER for finish.");
+            Console.ReadLine();
+        }
+    }
+
+
+    class Parser
+    {
+        // tady mel a byt funkce ktera dosadi do "string jmeno" nazev stolu.
+        internal static string getNameOfHand(string line, string keyWord)
+        {
+            return line.Substring(line.IndexOf(keyWord));
+        }
+
+    }       
+}
