@@ -84,6 +84,9 @@ namespace ConsoleApplication5
                         /* tady nevim jak to co mi vypsala konzole dostat do "string rozdaneKarty = hodnotaPrvniKarty + hodnotaDruheKarty + s/o" 
                          * abych stim mohl dal pracovat. ten vypsany vysledek neni objekt. aspom pro me ted neni objekt, mozna ze az to 
                          * pochopim tak zjistim ze je to objekt jak vino.   :)   
+                         *
+                         * Potrebuju to dostat do formatu "var nejakejmeno = ( hodnotaPrvniKarty + hodnotaDruheKarty + "vysledek srovnani (IF/ELSE = s/o)") 
+                         * Potrebuju nakopnout, protoze nevim jak definovat ty vysledky. 
                          */
                         // krize  == k
                         // srdce  == h
@@ -138,7 +141,9 @@ namespace ConsoleApplication5
             }
             catch (Exception e)
             {
-                // Co budes delat, kdyz ten soubor neexistuje?
+                // Co budes delat, kdyz ten soubor neexistuje?   
+                // Tohle budu resit az ta aplikace bude v okne, myslim tem bude texbox kde se budou vypysovat chyby
+                // Tech chyb muze byt kopa, takto tam necham vypisovat vsechno
                 Console.WriteLine(e.Message);
             }
 
@@ -165,7 +170,7 @@ namespace ConsoleApplication5
         *  vubec nemam zdani jak v tom udelat nejaky system. mam pocit ze je to strasne neprehledne.
         *  I ta pasaz "Rozdane karty" je to neprehledny flak textu. Jak je to s otdsazovanim a nejakyma 
         *  pravidlama kolem upravy aby se v tom dalo trochu vyznat. Cely ten kod ma cca 170 radku, neumim 
-        *  si predstavit kdy u vas pisete nejaky slozity megazdrojak a musi se v tom orientovat nekolik 
+        *  si predstavit kdy u Vas pisete nejaky slozity megazdrojak a musi se v tom orientovat nekolik 
         *  lidi kteri na tom spolupracujou  
         */
     
