@@ -11,22 +11,22 @@ namespace ConsoleApplication5
     {
         static void Main(string[] args)
         {
-            
+
 
             Parser parser = new Parser();
-            Reakce reakce = new Reakce();  
+            Reakce reakce = new Reakce();
 
             string keyWord = "Table";
             string keyWord1 = "Dealt";
             string keyWord2 = "PokerStars";
             string keyWord3 = "FLOP";
             string keyWordend = "SUMMARY";
-            const string STR_NAME_OF_TABLE = "Jmeno stolu";                   
+            const string STR_NAME_OF_TABLE = "Jmeno stolu";
             const string DEALT_TO = "Rozdano";
             const string TIME = "Cas";
             const string NUM_OF_HAND = "Cislo hry";
             const string FLOP = "Rozdano na flopu";
-            
+
             // Ctenni souboru line by line
             try
             {
@@ -39,7 +39,7 @@ namespace ConsoleApplication5
                         var LineOfTable = Parser.getNameOfTable(line, keyWord);
                         int startIndex = LineOfTable.IndexOf(" '") + " '".Length;
                         int endIndex = LineOfTable.IndexOf("' ");
-                        string jmenoStoluString = LineOfTable.Substring(startIndex, endIndex - startIndex);                       
+                        string jmenoStoluString = LineOfTable.Substring(startIndex, endIndex - startIndex);
                         Console.WriteLine(STR_NAME_OF_TABLE + ":" + jmenoStoluString);
 
                     }
@@ -51,7 +51,7 @@ namespace ConsoleApplication5
                         /*musim prevest "hodnota + barva" a "hodnota + barva" na jednoduzsi format "hodnota, hodnota + barva shodna ano/ne"
                         melo by to vypadat treba   AKo = "Eso Kral offsuite"    QTs = "Dama Deset suite"       tim se snizi pocet kombynaci na 169 */
                         string dealtCardString = hand.Substring(startIndex, endIndex - startIndex);
-                            //tady delim zapis na jednotlive karty    "prvniRozdana" a "druhaRozdana"
+                        //tady delim zapis na jednotlive karty    "prvniRozdana" a "druhaRozdana"
                         string prvnikarta = (".x" + dealtCardString + "x.");
                         int controlIndexA = prvnikarta.IndexOf(".x") + ".x".Length;
                         int controlIndexB = prvnikarta.IndexOf(" ");
@@ -71,21 +71,31 @@ namespace ConsoleApplication5
                         string b2 = (druhaRozdana);
                         var barvaDruheKarty = (b2[2]);
 
+                        // tady uz to kontroluje shodu barvy, bud je vysledek "s" nebo "o"
+                        if (barvaPrvniKarty.Equals(barvaDruheKarty))
+                        {
+                            Console.WriteLine(DEALT_TO + "///" + hodnotaPrvniKarty + barvaPrvniKarty + hodnotaDruheKarty + barvaDruheKarty + "... Prevedeno na :" + hodnotaPrvniKarty + hodnotaDruheKarty + "s");
+                        }
+                        else
+                        {
+                            Console.WriteLine(DEALT_TO + "///" + hodnotaPrvniKarty + barvaPrvniKarty + hodnotaDruheKarty + barvaDruheKarty + "... Prevedeno na :" + hodnotaPrvniKarty + hodnotaDruheKarty + "o");
+                        }
 
-                        // krize  = kross     = k
-                        // srdce  = heart     = h
-                        // piky   = peak      = p
-                        // kary   = diamonds  = d
-
-
-                        //tady uz definuje kazdou kartu zvlast + kazdou barvu zvlast 
-                        // jeste teda dodelat rozpoznavanishody barev.   
-                        Console.WriteLine(DEALT_TO + " : " + hodnotaPrvniKarty + barvaPrvniKarty + " a " + hodnotaDruheKarty + barvaDruheKarty);     
+                        /* tady nevim jak to co mi vypsala konzole dostat do "string rozdaneKarty = hodnotaPrvniKarty + hodnotaDruheKarty + s/o" 
+                         * abych stim mohl dal pracovat. ten vypsany vysledek neni objekt. aspom pro me ted neni objekt, mozna ze az to 
+                         * pochopim tak zjistim ze je to objekt jak vino.   :)   
+                         */
+                        // krize  == k
+                        // srdce  == h
+                        // piky   == p
+                        // kary   == d
 
 
                     }
-                    
-                    
+
+
+
+
                     if (line.Contains(keyWord2)) // Cas 
                     {
                         var time = Parser.getNameOfTable(line, keyWord2);
@@ -102,8 +112,8 @@ namespace ConsoleApplication5
                         string numString = num.Substring(startIndex, endIndex - startIndex);
                         Console.WriteLine(NUM_OF_HAND + ":" + numString);
                     }
-                    if (line.Contains(keyWord3)) // Rozdano na flopu                                 
-                    {                                                     
+                    if (line.Contains(keyWord3)) // Rozdano na flopu  >>> Mozna do budoucna pouziju na druhy krok ve hre (nejaka reakce na flop)                            
+                    {
                         var flop = Parser.getNameOfTable(line, keyWord3);
                         int startIndex = flop.IndexOf("[") + "[".Length;
                         int endIndex = flop.IndexOf("]");
@@ -116,14 +126,14 @@ namespace ConsoleApplication5
                         int startIndex = end.IndexOf("S") + "S".Length;
                         int endIndex = end.IndexOf("Y");
                         string endString = end.Substring(startIndex, endIndex - startIndex);
-                        Console.WriteLine("END OF THIS GAME, NOW WRITE NEXT GAME TO NEXT LINE IN ARRAY");
+                        Console.WriteLine("........................................................................");
                     }
                     /*else
                     {
                         // Jestlize ho nenajde, tak 
                         Console.WriteLine(".");
                     }
-                    */               
+                    */
                 }
             }
             catch (Exception e)
@@ -150,7 +160,15 @@ namespace ConsoleApplication5
 
     class Reakce
     {
-       
+        /* Tady nacist soubor se sadou hranych/nehranych kombinaci. Mam na to zalozit samostatnou tridu
+        *  viz "class Reakce" a resit to vni nebo to mamjeste vepsat do te tridy nahore "class program"
+        *  vubec nemam zdani jak v tom udelat nejaky system. mam pocit ze je to strasne neprehledne.
+        *  I ta pasaz "Rozdane karty" je to neprehledny flak textu. Jak je to s otdsazovanim a nejakyma 
+        *  pravidlama kolem upravy aby se v tom dalo trochu vyznat. Cely ten kod ma cca 170 radku, neumim 
+        *  si predstavit kdy u vas pisete nejaky slozity megazdrojak a musi se v tom orientovat nekolik 
+        *  lidi kteri na tom spolupracujou  
+        */
+    
     }
 
 }
