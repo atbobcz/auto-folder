@@ -1,0 +1,407 @@
+﻿PokerStars Hand #158075609147:  Hold'em No Limit ($0.01/$0.02 USD) - 2016/09/02 22:55:11 CET [2016/09/02 16:55:11 ET]
+Table 'Izar' 9-max Seat #8 is the button
+Seat 1: ATBobcz ($1.60 in chips) 
+Seat 2: Dimon69tv ($1.10 in chips) 
+Seat 4: djkimera ($2 in chips) 
+Seat 5: aleks-sem7 ($1 in chips) 
+Seat 6: marcelomatti ($2 in chips) 
+Seat 7: ZnauPrikup ($0.32 in chips) 
+Seat 8: soyer8 ($1.93 in chips) 
+Seat 9: m.levskiy ($2.14 in chips) 
+m.levskiy: posts small blind $0.01
+ATBobcz: posts big blind $0.02
+marcelomatti: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to ATBobcz [Ts Td]
+Dimon69tv: calls $0.02
+djkimera: folds 
+aleks-sem7: folds 
+marcelomatti: checks 
+ZnauPrikup: calls $0.02
+soyer8: folds 
+m.levskiy: folds 
+ATBobcz: raises $0.08 to $0.10
+Dimon69tv: calls $0.08
+marcelomatti: folds 
+ZnauPrikup: calls $0.08
+*** FLOP *** [3d Qd 2s]
+ATBobcz: bets $0.16
+Dimon69tv: calls $0.16
+ZnauPrikup: calls $0.16
+*** TURN *** [3d Qd 2s] [3c]
+ATBobcz: checks 
+Dimon69tv: checks 
+ZnauPrikup: bets $0.06 and is all-in
+ATBobcz: raises $0.40 to $0.46
+Dimon69tv: raises $0.38 to $0.84 and is all-in
+ATBobcz: calls $0.38
+*** RIVER *** [3d Qd 2s 3c] [8c]
+*** SHOW DOWN ***
+ATBobcz: shows [Ts Td] (two pair, Tens and Threes)
+Dimon69tv: shows [Qs Js] (two pair, Queens and Threes)
+Dimon69tv collected $1.50 from side pot
+ZnauPrikup: shows [4d Ad] (a pair of Threes)
+Dimon69tv collected $0.96 from main pot
+*** SUMMARY ***
+Total pot $2.55 Main pot $0.96. Side pot $1.50. | Rake $0.09 
+Board [3d Qd 2s 3c 8c]
+Seat 1: ATBobcz (big blind) showed [Ts Td] and lost with two pair, Tens and Threes
+Seat 2: Dimon69tv showed [Qs Js] and won ($2.46) with two pair, Queens and Threes
+Seat 4: djkimera folded before Flop (didn't bet)
+Seat 5: aleks-sem7 folded before Flop (didn't bet)
+Seat 6: marcelomatti folded before Flop
+Seat 7: ZnauPrikup showed [4d Ad] and lost with a pair of Threes
+Seat 8: soyer8 (button) folded before Flop (didn't bet)
+Seat 9: m.levskiy (small blind) folded before Flop
+
+
+
+PokerStars Hand #158075680869:  Hold'em No Limit ($0.01/$0.02 USD) - 2016/09/02 22:57:06 CET [2016/09/02 16:57:06 ET]
+Table 'Izar' 9-max Seat #9 is the button
+Seat 1: ATBobcz ($1.60 in chips) 
+Seat 2: Dimon69tv ($2.46 in chips) 
+Seat 4: djkimera ($2 in chips) 
+Seat 5: aleks-sem7 ($1 in chips) 
+Seat 6: marcelomatti ($2 in chips) 
+Seat 8: soyer8 ($1.93 in chips) 
+Seat 9: m.levskiy ($2.13 in chips) 
+ATBobcz: posts small blind $0.01
+Dimon69tv: posts big blind $0.02
+vla.lip: sits out 
+*** HOLE CARDS ***
+Dealt to ATBobcz [Ts As]
+djkimera: folds 
+ZnauPrikup leaves the table
+aleks-sem7: folds 
+marcelomatti: folds 
+soyer8: folds 
+m.levskiy: folds 
+ATBobcz: raises $0.04 to $0.06
+Dimon69tv: folds 
+Uncalled bet ($0.04) returned to ATBobcz
+ATBobcz collected $0.04 from pot
+ATBobcz: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: ATBobcz (small blind) collected ($0.04)
+Seat 2: Dimon69tv (big blind) folded before Flop
+Seat 4: djkimera folded before Flop (didn't bet)
+Seat 5: aleks-sem7 folded before Flop (didn't bet)
+Seat 6: marcelomatti folded before Flop (didn't bet)
+Seat 8: soyer8 folded before Flop (didn't bet)
+Seat 9: m.levskiy (button) folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #158075692519:  Hold'em No Limit ($0.01/$0.02 USD) - 2016/09/02 22:57:25 CET [2016/09/02 16:57:25 ET]
+Table 'Izar' 9-max Seat #1 is the button
+Seat 1: ATBobcz ($1.62 in chips) 
+Seat 2: Dimon69tv ($2.44 in chips) 
+Seat 3: vla.lip ($2.02 in chips) 
+Seat 4: djkimera ($2 in chips) 
+Seat 5: aleks-sem7 ($1 in chips) 
+Seat 6: marcelomatti ($2 in chips) 
+Seat 8: soyer8 ($1.93 in chips) 
+Seat 9: m.levskiy ($2.13 in chips) 
+Dimon69tv: posts small blind $0.01
+vla.lip: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to ATBobcz [7d Ah]
+djkimera: folds 
+aleks-sem7: calls $0.02
+marcelomatti: folds 
+soyer8: folds 
+lajcsi198 joins the table at seat #7 
+m.levskiy: folds 
+ATBobcz: folds 
+Dimon69tv: folds 
+vla.lip: checks 
+*** FLOP *** [8c 6h Qs]
+vla.lip: checks 
+aleks-sem7: checks 
+*** TURN *** [8c 6h Qs] [4d]
+vla.lip: bets $0.03
+aleks-sem7: calls $0.03
+*** RIVER *** [8c 6h Qs 4d] [3d]
+vla.lip: bets $0.07
+aleks-sem7: calls $0.07
+*** SHOW DOWN ***
+vla.lip: shows [7s 5d] (a straight, Four to Eight)
+aleks-sem7: mucks hand 
+vla.lip collected $0.24 from pot
+*** SUMMARY ***
+Total pot $0.25 | Rake $0.01 
+Board [8c 6h Qs 4d 3d]
+Seat 1: ATBobcz (button) folded before Flop (didn't bet)
+Seat 2: Dimon69tv (small blind) folded before Flop
+Seat 3: vla.lip (big blind) showed [7s 5d] and won ($0.24) with a straight, Four to Eight
+Seat 4: djkimera folded before Flop (didn't bet)
+Seat 5: aleks-sem7 mucked [Qc Kh]
+Seat 6: marcelomatti folded before Flop (didn't bet)
+Seat 8: soyer8 folded before Flop (didn't bet)
+Seat 9: m.levskiy folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #158075722381:  Hold'em No Limit ($0.01/$0.02 USD) - 2016/09/02 22:58:12 CET [2016/09/02 16:58:12 ET]
+Table 'Izar' 9-max Seat #2 is the button
+Seat 1: ATBobcz ($1.62 in chips) 
+Seat 2: Dimon69tv ($2.43 in chips) 
+Seat 3: vla.lip ($2.14 in chips) 
+Seat 4: djkimera ($2 in chips) 
+Seat 5: aleks-sem7 ($0.88 in chips) 
+Seat 6: marcelomatti ($2 in chips) 
+Seat 7: lajcsi198 ($1 in chips) 
+Seat 8: soyer8 ($1.93 in chips) 
+Seat 9: m.levskiy ($2.13 in chips) 
+vla.lip: posts small blind $0.01
+djkimera: posts big blind $0.02
+lajcsi198: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to ATBobcz [8c 2s]
+aleks-sem7: calls $0.02
+marcelomatti: folds 
+lajcsi198: checks 
+soyer8: folds 
+m.levskiy: folds 
+ATBobcz: folds 
+Dimon69tv: folds 
+vla.lip: folds 
+djkimera: checks 
+*** FLOP *** [Ad 5c 7s]
+djkimera: checks 
+aleks-sem7: checks 
+lajcsi198: checks 
+*** TURN *** [Ad 5c 7s] [6c]
+djkimera: bets $0.06
+aleks-sem7: calls $0.06
+lajcsi198: folds 
+*** RIVER *** [Ad 5c 7s 6c] [3c]
+djkimera: bets $0.08
+aleks-sem7: calls $0.08
+*** SHOW DOWN ***
+djkimera: shows [6s 7c] (two pair, Sevens and Sixes)
+aleks-sem7: mucks hand 
+djkimera collected $0.34 from pot
+*** SUMMARY ***
+Total pot $0.35 | Rake $0.01 
+Board [Ad 5c 7s 6c 3c]
+Seat 1: ATBobcz folded before Flop (didn't bet)
+Seat 2: Dimon69tv (button) folded before Flop (didn't bet)
+Seat 3: vla.lip (small blind) folded before Flop
+Seat 4: djkimera (big blind) showed [6s 7c] and won ($0.34) with two pair, Sevens and Sixes
+Seat 5: aleks-sem7 mucked [Js Ac]
+Seat 6: marcelomatti folded before Flop (didn't bet)
+Seat 7: lajcsi198 folded on the Turn
+Seat 8: soyer8 folded before Flop (didn't bet)
+Seat 9: m.levskiy folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #158075767155:  Hold'em No Limit ($0.01/$0.02 USD) - 2016/09/02 22:59:23 CET [2016/09/02 16:59:23 ET]
+Table 'Izar' 9-max Seat #3 is the button
+Seat 1: ATBobcz ($1.62 in chips) 
+Seat 2: Dimon69tv ($2.43 in chips) 
+Seat 3: vla.lip ($2.13 in chips) 
+Seat 4: djkimera ($2.18 in chips) 
+Seat 5: aleks-sem7 ($0.72 in chips) 
+Seat 6: marcelomatti ($2 in chips) 
+Seat 7: lajcsi198 ($0.98 in chips) 
+Seat 8: soyer8 ($1.93 in chips) 
+Seat 9: m.levskiy ($2.13 in chips) 
+djkimera: posts small blind $0.01
+aleks-sem7: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to ATBobcz [Kd 8c]
+marcelomatti: folds 
+lajcsi198: calls $0.02
+soyer8: folds 
+m.levskiy: folds 
+ATBobcz: folds 
+Dimon69tv: folds 
+vla.lip: folds 
+djkimera: raises $0.06 to $0.08
+aleks-sem7: folds 
+lajcsi198: calls $0.06
+*** FLOP *** [8s Js Ks]
+djkimera: bets $0.08
+lajcsi198: raises $0.32 to $0.40
+djkimera: folds 
+Uncalled bet ($0.32) returned to lajcsi198
+lajcsi198 collected $0.33 from pot
+*** SUMMARY ***
+Total pot $0.34 | Rake $0.01 
+Board [8s Js Ks]
+Seat 1: ATBobcz folded before Flop (didn't bet)
+Seat 2: Dimon69tv folded before Flop (didn't bet)
+Seat 3: vla.lip (button) folded before Flop (didn't bet)
+Seat 4: djkimera (small blind) folded on the Flop
+Seat 5: aleks-sem7 (big blind) folded before Flop
+Seat 6: marcelomatti folded before Flop (didn't bet)
+Seat 7: lajcsi198 collected ($0.33)
+Seat 8: soyer8 folded before Flop (didn't bet)
+Seat 9: m.levskiy folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #158075796341:  Hold'em No Limit ($0.01/$0.02 USD) - 2016/09/02 23:00:08 CET [2016/09/02 17:00:08 ET]
+Table 'Izar' 9-max Seat #4 is the button
+Seat 1: ATBobcz ($1.62 in chips) 
+Seat 2: Dimon69tv ($2.43 in chips) 
+Seat 3: vla.lip ($2.13 in chips) 
+Seat 4: djkimera ($2.02 in chips) 
+Seat 5: aleks-sem7 ($0.70 in chips) 
+Seat 6: marcelomatti ($2 in chips) 
+Seat 7: lajcsi198 ($1.15 in chips) 
+Seat 8: soyer8 ($1.93 in chips) 
+Seat 9: m.levskiy ($2.13 in chips) 
+aleks-sem7: posts small blind $0.01
+marcelomatti: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to ATBobcz [9d 8d]
+lajcsi198: folds 
+soyer8: folds 
+m.levskiy: folds 
+ATBobcz: raises $0.04 to $0.06
+Dimon69tv: folds 
+vla.lip: folds 
+djkimera: calls $0.06
+aleks-sem7: raises $0.04 to $0.10
+marcelomatti: folds 
+ATBobcz: calls $0.04
+djkimera: calls $0.04
+*** FLOP *** [Ad 9c Jd]
+aleks-sem7: checks 
+ATBobcz: checks 
+djkimera: checks 
+*** TURN *** [Ad 9c Jd] [7d]
+aleks-sem7: checks 
+ATBobcz: bets $0.15
+djkimera: calls $0.15
+aleks-sem7: folds 
+*** RIVER *** [Ad 9c Jd 7d] [2s]
+ATBobcz: bets $0.30
+djkimera: calls $0.30
+*** SHOW DOWN ***
+ATBobcz: shows [9d 8d] (a flush, Ace high)
+djkimera: mucks hand 
+ATBobcz collected $1.18 from pot
+*** SUMMARY ***
+Total pot $1.22 | Rake $0.04 
+Board [Ad 9c Jd 7d 2s]
+Seat 1: ATBobcz showed [9d 8d] and won ($1.18) with a flush, Ace high
+Seat 2: Dimon69tv folded before Flop (didn't bet)
+Seat 3: vla.lip folded before Flop (didn't bet)
+Seat 4: djkimera (button) mucked [7h 7c]
+Seat 5: aleks-sem7 (small blind) folded on the Turn
+Seat 6: marcelomatti (big blind) folded before Flop
+Seat 7: lajcsi198 folded before Flop (didn't bet)
+Seat 8: soyer8 folded before Flop (didn't bet)
+Seat 9: m.levskiy folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #158075839943:  Hold'em No Limit ($0.01/$0.02 USD) - 2016/09/02 23:01:07 CET [2016/09/02 17:01:07 ET]
+Table 'Izar' 9-max Seat #5 is the button
+Seat 1: ATBobcz ($2.25 in chips) 
+Seat 2: Dimon69tv ($2.43 in chips) 
+Seat 3: vla.lip ($2.13 in chips) 
+Seat 4: djkimera ($2 in chips) 
+Seat 5: aleks-sem7 ($0.60 in chips) 
+Seat 6: marcelomatti ($2 in chips) 
+Seat 7: lajcsi198 ($1.15 in chips) 
+Seat 8: soyer8 ($1.93 in chips) 
+Seat 9: m.levskiy ($2.13 in chips) 
+marcelomatti: posts small blind $0.01
+lajcsi198: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to ATBobcz [7c Jh]
+soyer8: raises $0.06 to $0.08
+m.levskiy: folds 
+ATBobcz: folds 
+Dimon69tv: folds 
+vla.lip: folds 
+djkimera: folds 
+aleks-sem7: folds 
+marcelomatti: calls $0.07
+lajcsi198: folds 
+*** FLOP *** [Ad 9c 8h]
+marcelomatti: checks 
+soyer8: bets $0.08
+marcelomatti: folds 
+Uncalled bet ($0.08) returned to soyer8
+soyer8 collected $0.17 from pot
+soyer8: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.18 | Rake $0.01 
+Board [Ad 9c 8h]
+Seat 1: ATBobcz folded before Flop (didn't bet)
+Seat 2: Dimon69tv folded before Flop (didn't bet)
+Seat 3: vla.lip folded before Flop (didn't bet)
+Seat 4: djkimera folded before Flop (didn't bet)
+Seat 5: aleks-sem7 (button) folded before Flop (didn't bet)
+Seat 6: marcelomatti (small blind) folded on the Flop
+Seat 7: lajcsi198 (big blind) folded before Flop
+Seat 8: soyer8 collected ($0.17)
+Seat 9: m.levskiy folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #158075867581:  Hold'em No Limit ($0.01/$0.02 USD) - 2016/09/02 23:01:44 CET [2016/09/02 17:01:44 ET]
+Table 'Izar' 9-max Seat #6 is the button
+Seat 1: ATBobcz ($2.25 in chips) 
+Seat 2: Dimon69tv ($2.43 in chips) 
+Seat 3: vla.lip ($2.13 in chips) 
+Seat 4: djkimera ($2 in chips) 
+Seat 5: aleks-sem7 ($0.60 in chips) 
+Seat 6: marcelomatti ($2 in chips) 
+Seat 7: lajcsi198 ($1.13 in chips) 
+Seat 8: soyer8 ($2.02 in chips) 
+Seat 9: m.levskiy ($2.13 in chips) 
+lajcsi198: posts small blind $0.01
+soyer8: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to ATBobcz [Kh 7c]
+m.levskiy: folds 
+ATBobcz: folds 
+Dimon69tv: calls $0.02
+vla.lip: folds 
+djkimera: folds 
+aleks-sem7: calls $0.02
+marcelomatti: calls $0.02
+lajcsi198: calls $0.01
+soyer8: checks 
+*** FLOP *** [2h Ah Jh]
+lajcsi198: checks 
+soyer8: checks 
+Dimon69tv: bets $0.10
+aleks-sem7: folds 
+marcelomatti: calls $0.10
+lajcsi198: folds 
+soyer8: folds 
+*** TURN *** [2h Ah Jh] [Td]
+Dimon69tv: bets $0.08
+marcelomatti: calls $0.08
+*** RIVER *** [2h Ah Jh Td] [2s]
+Dimon69tv: checks 
+marcelomatti: bets $0.35
+Dimon69tv: calls $0.35
+*** SHOW DOWN ***
+marcelomatti: shows [2c Ac] (a full house, Deuces full of Aces)
+Dimon69tv: mucks hand 
+marcelomatti collected $1.12 from pot
+*** SUMMARY ***
+Total pot $1.16 | Rake $0.04 
+Board [2h Ah Jh Td 2s]
+Seat 1: ATBobcz folded before Flop (didn't bet)
+Seat 2: Dimon69tv mucked [Js As]
+Seat 3: vla.lip folded before Flop (didn't bet)
+Seat 4: djkimera folded before Flop (didn't bet)
+Seat 5: aleks-sem7 folded on the Flop
+Seat 6: marcelomatti (button) showed [2c Ac] and won ($1.12) with a full house, Deuces full of Aces
+Seat 7: lajcsi198 (small blind) folded on the Flop
+Seat 8: soyer8 (big blind) folded on the Flop
+Seat 9: m.levskiy folded before Flop (didn't bet)
+
+
+
