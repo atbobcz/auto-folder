@@ -15,10 +15,7 @@ namespace ConsoleApplication5
 
             Parser parser = new Parser();
 
-            string keyWord = "AA"; /* tady bude misto //string keyWord = "AA";//    //string keyWord = (var nejake jmeno)// 
-            * ten var potrebuju vytahnout z hlavniho scriptu. Tam pisu ze jeste nevim jak ten vystup z console.WriteLine (s)/(o) dostat
-            * do var, nebo do stringu.  
-            */
+            string keyWord = "AA"; /* tady bude misto //string keyWord = "AA";//    //string keyWord = (var nejake jmeno)*/
 
             const string GameActionPreFlop = "Akce s kartamy";
 
@@ -52,7 +49,7 @@ namespace ConsoleApplication5
 
     class Parser
     {
-        // tady mel a byt funkce ktera dosadi do "string jmeno" nazev stolu.
+        
         internal static string getNameOfHand(string line, string keyWord)
         {
             return line.Substring(line.IndexOf(keyWord));
