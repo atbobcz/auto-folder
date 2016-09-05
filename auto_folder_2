@@ -20,6 +20,7 @@ namespace ConsoleApplication5
             string keyWord1 = "Dealt";
             string keyWord2 = "PokerStars";
             string keyWord3 = "FLOP";
+            string hranaKombinace = "";
             string keyWordend = "SUMMARY";
             const string STR_NAME_OF_TABLE = "Jmeno stolu";
             const string DEALT_TO = "Rozdano";
@@ -51,7 +52,7 @@ namespace ConsoleApplication5
                         /*musim prevest "hodnota + barva" a "hodnota + barva" na jednoduzsi format "hodnota, hodnota + barva shodna ano/ne"
                         melo by to vypadat treba   AKo = "Eso Kral offsuite"    QTs = "Dama Deset suite"       tim se snizi pocet kombynaci na 169 */
                         string dealtCardString = hand.Substring(startIndex, endIndex - startIndex);
-                        //tady delim zapis na jednotlive karty    "prvniRozdana" a "druhaRozdana"
+                                                 //tady delim zapis na jednotlive karty    "prvniRozdana" a "druhaRozdana"
                         string prvnikarta = (".x" + dealtCardString + "x.");
                         int controlIndexA = prvnikarta.IndexOf(".x") + ".x".Length;
                         int controlIndexB = prvnikarta.IndexOf(" ");
@@ -60,40 +61,29 @@ namespace ConsoleApplication5
                         int controlIndexB2 = prvnikarta.IndexOf("x.");
                         string druhaRozdana = prvnikarta.Substring(controlIndexA2, controlIndexB2 - controlIndexA2);
 
-                        // tady zjistuju hodnotu a barvu prvni karty
+                                                // tady zjistuju hodnotu a barvu prvni karty
                         string h1 = (prvniRozdana);
                         var hodnotaPrvniKarty = (h1[0]);
                         string b1 = (prvniRozdana);
                         var barvaPrvniKarty = (b1[1]);
-                        //hodnota a barva druhe karty
+                                                //hodnota a barva druhe karty
                         string h2 = (druhaRozdana);
                         var hodnotaDruheKarty = (h2[1]);
                         string b2 = (druhaRozdana);
                         var barvaDruheKarty = (b2[2]);
 
-                        // tady uz to kontroluje shodu barvy, bud je vysledek "s" nebo "o"
+                                                              // tady uz to kontroluje shodu barvy, bud je vysledek "s" nebo "o"
                         if (barvaPrvniKarty.Equals(barvaDruheKarty))
                         {
-                            Console.WriteLine(DEALT_TO + "///" + hodnotaPrvniKarty + barvaPrvniKarty + hodnotaDruheKarty + barvaDruheKarty + "... Prevedeno na :" + hodnotaPrvniKarty + hodnotaDruheKarty + "s");
+                            hranaKombinace = ("... Prevedeno na :" + hodnotaPrvniKarty + hodnotaDruheKarty + "s");
                         }
+
                         else
                         {
-                            Console.WriteLine(DEALT_TO + "///" + hodnotaPrvniKarty + barvaPrvniKarty + hodnotaDruheKarty + barvaDruheKarty + "... Prevedeno na :" + hodnotaPrvniKarty + hodnotaDruheKarty + "o");
+                            hranaKombinace = ("... Prevedeno na :" + hodnotaPrvniKarty + hodnotaDruheKarty + "o");
                         }
 
-                        /* tady nevim jak to co mi vypsala konzole dostat do "string rozdaneKarty = hodnotaPrvniKarty + hodnotaDruheKarty + s/o" 
-                         * abych stim mohl dal pracovat. ten vypsany vysledek neni objekt. aspom pro me ted neni objekt, mozna ze az to 
-                         * pochopim tak zjistim ze je to objekt jak vino.   :)   
-                         *
-                         * Potrebuju to dostat do formatu "var nejakejmeno = ( hodnotaPrvniKarty + hodnotaDruheKarty + "vysledek srovnani (IF/ELSE = s/o)") 
-                         * Potrebuju nakopnout, protoze nevim jak definovat ty vysledky. 
-                         */
-                        // krize  == k
-                        // srdce  == h
-                        // piky   == p
-                        // kary   == d
-
-
+                        Console.WriteLine(hranaKombinace);    // vypsany finalni format format 
                     }
 
 
@@ -154,8 +144,7 @@ namespace ConsoleApplication5
 
 
     class Parser
-    {
-        // tady mel a byt funkce ktera dosadi do "string jmeno" nazev stolu.
+    {       
         internal static string getNameOfTable(string line, string keyWord)
         {
             return line.Substring(line.IndexOf(keyWord));
@@ -173,7 +162,7 @@ namespace ConsoleApplication5
         *  si predstavit kdy u Vas pisete nejaky slozity megazdrojak a musi se v tom orientovat nekolik 
         *  lidi kteri na tom spolupracujou  
         */
-    
+
     }
 
 }
