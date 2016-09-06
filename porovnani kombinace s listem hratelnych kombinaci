@@ -15,24 +15,24 @@ namespace ConsoleApplication5
 
             Parser parser = new Parser();
 
-            string keyWord = "AA"; /* tady bude misto //string keyWord = "AA";//    //string keyWord = (var nejake jmeno)*/
+            string keyKombinaction = "AA"; /* tady bude misto //string keyWord = "AA";//    //string keyWord = (var nejake jmeno)*/
 
             const string GameActionPreFlop = "Akce s kartamy";
 
             // Ctenni souboru line by line
             try
             {
-                string[] lines = System.IO.File.ReadAllLines(@"C:\shk.txt");
-                foreach (string line in lines)
+                string[] ALLlines = System.IO.File.ReadAllLines(@"C:\shk.txt");
+                foreach (string Handline in ALLlines)
                 {
-                    if (line.Contains(keyWord)) // Jmeno stolu
+                    if (Handline.Contains(keyKombinaction)) // Jmeno stolu
                     {
 
-                        var LineOfList = Parser.getNameOfHand(line, keyWord);
-                        
-                        Console.WriteLine(GameActionPreFlop + "-" + LineOfList);
+                        var LineOfHAND = Parser.getNameOfHand(Handline, keyKombinaction);
 
-                    }                    
+                        Console.WriteLine(GameActionPreFlop + "-" + LineOfHAND);
+
+                    }
                 }
             }
             catch (Exception e)
@@ -49,11 +49,11 @@ namespace ConsoleApplication5
 
     class Parser
     {
-        
-        internal static string getNameOfHand(string line, string keyWord)
+
+        internal static string getNameOfHand(string Handline, string keyKombinaction)
         {
-            return line.Substring(line.IndexOf(keyWord));
+            return Handline.Substring(Handline.IndexOf(keyKombinaction));
         }
 
-    }       
+    }
 }
