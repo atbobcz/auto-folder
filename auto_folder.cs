@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 
 namespace ConsoleApplication5
@@ -14,16 +15,15 @@ namespace ConsoleApplication5
 
 
             Parser parser = new Parser();
-            Reakce reakce = new Reakce();
+            
 
             string keyWord = "Table";
             string keyWord1 = "Dealt";
             string keyWord2 = "PokerStars";
             string keyWord3 = "FLOP";
-            string hranaKombinace = "";
+            string hranaKombinace ;
             string keyWordend = "SUMMARY";
             const string STR_NAME_OF_TABLE = "Jmeno stolu";
-            const string DEALT_TO = "Rozdano";
             const string TIME = "Cas";
             const string NUM_OF_HAND = "Cislo hry";
             const string FLOP = "Rozdano na flopu";
@@ -32,6 +32,7 @@ namespace ConsoleApplication5
             try
             {
                 string[] lines = System.IO.File.ReadAllLines(@"C:\Text.txt");
+                string[] handline = System.IO.File.ReadAllLines(@"C:\Users\Viktor\Desktop\seznamdvojickaret.txt");
                 foreach (string line in lines)
                 {
                     if (line.Contains(keyWord)) // Jmeno stolu
@@ -52,7 +53,7 @@ namespace ConsoleApplication5
                         /*musim prevest "hodnota + barva" a "hodnota + barva" na jednoduzsi format "hodnota, hodnota + barva shodna ano/ne"
                         melo by to vypadat treba   AKo = "Eso Kral offsuite"    QTs = "Dama Deset suite"       tim se snizi pocet kombynaci na 169 */
                         string dealtCardString = hand.Substring(startIndex, endIndex - startIndex);
-                                                 //tady delim zapis na jednotlive karty    "prvniRozdana" a "druhaRozdana"
+                        //tady delim zapis na jednotlive karty    "prvniRozdana" a "druhaRozdana"
                         string prvnikarta = (".x" + dealtCardString + "x.");
                         int controlIndexA = prvnikarta.IndexOf(".x") + ".x".Length;
                         int controlIndexB = prvnikarta.IndexOf(" ");
@@ -61,34 +62,54 @@ namespace ConsoleApplication5
                         int controlIndexB2 = prvnikarta.IndexOf("x.");
                         string druhaRozdana = prvnikarta.Substring(controlIndexA2, controlIndexB2 - controlIndexA2);
 
-                                                // tady zjistuju hodnotu a barvu prvni karty
+                        // tady zjistuju hodnotu a barvu prvni karty
                         string h1 = (prvniRozdana);
                         var hodnotaPrvniKarty = (h1[0]);
                         string b1 = (prvniRozdana);
                         var barvaPrvniKarty = (b1[1]);
-                                                //hodnota a barva druhe karty
+                        //hodnota a barva druhe karty
                         string h2 = (druhaRozdana);
                         var hodnotaDruheKarty = (h2[1]);
                         string b2 = (druhaRozdana);
                         var barvaDruheKarty = (b2[2]);
 
-                                                              // tady uz to kontroluje shodu barvy, bud je vysledek "s" nebo "o"
+                        // tady uz to kontroluje shodu barvy, bud je vysledek "s" nebo "o"
                         if (barvaPrvniKarty.Equals(barvaDruheKarty))
                         {
-                            hranaKombinace = ("... Prevedeno na :" + hodnotaPrvniKarty + hodnotaDruheKarty + "s");
+                            hranaKombinace = ("(" + hodnotaPrvniKarty + hodnotaDruheKarty + "s" + ")");
                         }
 
                         else
                         {
-                            hranaKombinace = ("... Prevedeno na :" + hodnotaPrvniKarty + hodnotaDruheKarty + "o");
+                            hranaKombinace = ("(" + hodnotaPrvniKarty + hodnotaDruheKarty + "o" + ")");
                         }
 
-                        Console.WriteLine(hranaKombinace);    // vypsany finalni format format 
+                        string input = hranaKombinace;
+                        int start = input.IndexOf("(");
+                        int stop = input.IndexOf(")");
+                        string zkracenaKombinace = input.Substring(start + 1, stop - start - 1);
+                        Console.WriteLine(zkracenaKombinace);    // vypsany finalni format format 
+
+
+                        // string zkracenaKombinace je hotova kombinace, nezasahovat, nemazat, neupravovat  !!!!!
+                        //...................................................................................................................
+                        string listfold = File.ReadAllText(@"C:\Users\Viktor\Desktop\seznamdvojickaret.txt");
+
+                        if (listfold.Contains(zkracenaKombinace))
+                         {
+                            Console.WriteLine(zkracenaKombinace + "fold");
+                         }
+
+                        else
+                        {
+                            Console.WriteLine(zkracenaKombinace +"bet");
+                        }
                     }
 
 
 
-
+// odsud dolu to taky facha tak jak ma, nemenit !!!!!
+//.....................................................................................................................
                     if (line.Contains(keyWord2)) // Cas 
                     {
                         var time = Parser.getNameOfTable(line, keyWord2);
@@ -144,25 +165,11 @@ namespace ConsoleApplication5
 
 
     class Parser
-    {       
+    {
         internal static string getNameOfTable(string line, string keyWord)
         {
             return line.Substring(line.IndexOf(keyWord));
         }
 
     }
-
-    class Reakce
-    {
-        /* Tady nacist soubor se sadou hranych/nehranych kombinaci. Mam na to zalozit samostatnou tridu
-        *  viz "class Reakce" a resit to vni nebo to mamjeste vepsat do te tridy nahore "class program"
-        *  vubec nemam zdani jak v tom udelat nejaky system. mam pocit ze je to strasne neprehledne.
-        *  I ta pasaz "Rozdane karty" je to neprehledny flak textu. Jak je to s otdsazovanim a nejakyma 
-        *  pravidlama kolem upravy aby se v tom dalo trochu vyznat. Cely ten kod ma cca 170 radku, neumim 
-        *  si predstavit kdy u Vas pisete nejaky slozity megazdrojak a musi se v tom orientovat nekolik 
-        *  lidi kteri na tom spolupracujou  
-        */
-
-    }
-
 }
