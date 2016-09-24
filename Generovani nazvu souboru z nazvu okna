@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace pracovni_prostor
+{
+   
+    class Program
+    {
+        
+        
+       
+        static void Main(string[] args)            
+
+        {
+
+            string windowTitle = ("McNaught - $0.01/$0.02 USD - No Limit Hold'em - Logged In as ATBobcz");
+            string originalFile = ("HH20160924 McNaught - $0.01-$0.02 - USD No Limit Hold'em.txt");
+            string WinToPath1 = ("");            
+            string WinName    = ("");
+
+            if (windowTitle.Contains("No Limit Hold'em"))
+            {
+                WinName = windowTitle;
+                WinToPath1 = ("xXx " + windowTitle);
+                int controlIndexA = WinToPath1.IndexOf("xXx") + "xXx".Length;
+                int controlIndexB = WinToPath1.IndexOf("/$");
+                string PathA = WinToPath1.Substring(controlIndexA, controlIndexB - controlIndexA);
+
+                int controlIndexAa = WinToPath1.IndexOf("/$") + "/$".Length;
+                int controlIndexBb = WinToPath1.IndexOf("USD");
+                string PathB = WinToPath1.Substring(controlIndexAa, controlIndexBb - controlIndexAa);
+
+                string Path = (PathA + "-$" + PathB);
+
+                DateTime time = DateTime.Now;
+                string format = "yyyyMMdd";
+                string datum = (time.ToString(format));
+                string FinalPath = ("HH" + datum + Path + "- USD No Limit Hold'em.txt");
+
+
+                Console.WriteLine(WinToPath1);
+                Console.WriteLine("+++" + FinalPath);    // finalni nazev souboru hystorie her   zarucene bez chyby!!!!  Nezasahovat!!!!
+                Console.WriteLine("***" + originalFile);
+                
+            }
+
+            else
+            {
+                Console.WriteLine("PokerSatars Waiting Cards ");
+            }
+            Console.ReadLine();
+        }
+    }
+}
